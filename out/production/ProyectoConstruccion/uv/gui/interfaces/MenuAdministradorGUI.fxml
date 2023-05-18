@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="337.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uv.gui.controladores.MenuAdministradorGUIController">
+   <children>
+      <ImageView fx:id="imgFondo" fitHeight="314.0" fitWidth="520.0" layoutX="13.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnCosultarOferta" layoutX="61.0" layoutY="84.0" mnemonicParsing="false" onAction="#abrirOfertaAcademica" prefHeight="47.0" prefWidth="208.0" text="Consultar Oferta Academica" />
+      <Button fx:id="btnAsignarDocentes" layoutX="61.0" layoutY="177.0" mnemonicParsing="false" onAction="#abrirAsignarDocentesExperiencias" prefHeight="47.0" prefWidth="208.0" text="Asignar docentes a experiencias" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="791.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uv.gui.controladores.CU09ConsultarReporteporTutorController">
+   <children>
+      <Label layoutX="189.0" layoutY="21.0" text="Reporte por Tutor Académico">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="58.0" text="Periodo Escolar:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="77.0" layoutY="93.0" text="Programa Educativo:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="377.0" layoutY="64.0" text="Fecha de la Tutoría:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="377.0" layoutY="91.0" text="Tutor Académico:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="277.0" layoutY="131.0" text="Lista de Tutorados">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <TableView fx:id="tblTutorados" accessibleText="jjj" layoutX="75.0" layoutY="156.0" prefHeight="200.0" prefWidth="517.0">
+        <columns>
+          <TableColumn fx:id="cMatricula" prefWidth="106.00003051757812" text="Matricula" />
+          <TableColumn fx:id="cNombre" prefWidth="339.3333740234375" text="Nombre" />
+            <TableColumn fx:id="cAsistencia" prefWidth="70.6666259765625" text="Asistencia" />
+        </columns>
+      </TableView>
+      <Label layoutX="238.0" layoutY="506.0" text="Problemáticas Académicas">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Label>
+      <TableView fx:id="tblProblematicas" layoutX="72.0" layoutY="536.0" prefHeight="200.0" prefWidth="517.0">
+        <columns>
+          <TableColumn fx:id="cEE" prefWidth="126.00003051757812" text="Experiencia Educativa" />
+          <TableColumn fx:id="cDocente" minWidth="0.0" prefWidth="161.33331298828125" text="Docente" />
+            <TableColumn fx:id="cProblematica" minWidth="0.0" prefWidth="228.00002034505212" text="Problemática Académica" />
+        </columns>
+      </TableView>
+      <Label layoutX="248.0" layoutY="371.0" text="Comentarios Generales">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtComentarios" editable="false" layoutX="77.0" layoutY="390.0" prefHeight="100.0" prefWidth="517.0" promptText="No hay comentarios generales" />
+      <Label fx:id="lblPeriodo" layoutX="172.0" layoutY="58.0" text="ooo" />
+      <Label fx:id="lblPrograma" layoutX="207.0" layoutY="93.0" text="oooo" />
+      <Label fx:id="lblFecha" layoutX="499.0" layoutY="64.0" text="oooo" />
+      <Label fx:id="lblTutor" layoutX="488.0" layoutY="91.0" text="ooooo" />
+      <Label fx:id="lblIdsesion" layoutX="574.0" layoutY="32.0" text="ooo" visible="false" />
+      <Label fx:id="llave" layoutX="83.0" layoutY="123.0" text="Label" visible="false" />
+      <Button fx:id="btnCerrar" layoutX="489.0" layoutY="19.0" mnemonicParsing="false" onAction="#cerrarVentana" text="Cerrar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uv.gui.controladores.CU09ConsultarReportesporTutorController">
+   <children>
+      <Label layoutX="141.0" layoutY="36.0" text="Consultar Reportes por Tutor Académico">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblReportes" layoutX="43.0" layoutY="128.0" prefHeight="211.0" prefWidth="575.0">
+        <columns>
+          <TableColumn fx:id="cPeriodo" prefWidth="192.66668319702148" text="Periodo" />
+          <TableColumn fx:id="cTutoria" minWidth="4.6666259765625" prefWidth="76.66664123535156" text="#Tutoria" />
+            <TableColumn fx:id="cFecha" prefWidth="97.3333740234375" text="Fecha" />
+            <TableColumn fx:id="cTutor" prefWidth="205.999989827474" text="Tutor" />
+        </columns>
+      </TableView>
+      <Button layoutX="285.0" layoutY="350.0" mnemonicParsing="false" onAction="#consultarReporteSeleccionado" text="Consultar" />
+      <TextField fx:id="txtNombreTutor" layoutX="210.0" layoutY="84.0" onKeyReleased="#filtrarNombreTutor" prefHeight="25.0" prefWidth="198.0" promptText="Filtra por el nombre del Tutor" />
+      <Button fx:id="btnCerrar" layoutX="569.0" layoutY="350.0" mnemonicParsing="false" onAction="#cerrarVentana" text="Cerrar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uv.gui.controladores.MenuCoordinadorGUIController">
+   <children>
+      <ImageView fitHeight="371.0" fitWidth="574.0" layoutX="13.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="58.0" layoutY="32.0" mnemonicParsing="false" onAction="#abrirRegistrarFechasdeTutoria" prefHeight="32.0" prefWidth="225.0" text="Registrar fechas de tutoria" />
+      <Button layoutX="58.0" layoutY="79.0" mnemonicParsing="false" onAction="#abrirModificarFechasdeTutoria" prefHeight="32.0" prefWidth="225.0" text="Modificar fechas de tutoria" />
+      <Button layoutX="58.0" layoutY="139.0" mnemonicParsing="false" onAction="#abrirRegistrarFechasdeCierredeReporte" prefHeight="32.0" prefWidth="287.0" text="Registrar fechas de cierre de reporte de  tutoria" />
+      <Button layoutX="58.0" layoutY="185.0" mnemonicParsing="false" onAction="#abrirModificarFechasdeCierredeReporte" prefHeight="32.0" prefWidth="287.0" text="Modificar fechas de cierre de reporte de tutoria" />
+      <Button layoutX="58.0" layoutY="240.0" mnemonicParsing="false" onAction="#abrirRegistrarTutor" prefHeight="32.0" prefWidth="225.0" text="Registrar tutor academico" />
+      <Button layoutX="58.0" layoutY="286.0" mnemonicParsing="false" onAction="#abrirConsultarTutorado" prefHeight="32.0" prefWidth="225.0" text="Consultar tutorado" />
+      <Button layoutX="334.0" layoutY="240.0" mnemonicParsing="false" onAction="#abrirConsultarTutor" prefHeight="32.0" prefWidth="225.0" text="Consultar tutor academico" />
+      <Button layoutX="334.0" layoutY="79.0" mnemonicParsing="false" onAction="#abrirConsultarReportesPorTutor" prefHeight="32.0" prefWidth="225.0" text="Consultar reportes por tutor" />
+      <Button layoutX="334.0" layoutY="290.0" mnemonicParsing="false" onAction="#abrirAsignarTutor" prefHeight="32.0" prefWidth="225.0" text="Asignar tutor a tutorado" />
+   </children>
+</AnchorPane>
